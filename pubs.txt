@@ -1,0 +1,161 @@
+This is basically a bib file, but I've added links to the source documents.
+docURL for document URLs;
+presURL for presentation URLs, when there is also a document URL;
+tags for international, national, peer reviewed and abstract-only review
+
+@inproceedings{byunlsoar2011smemDambig,
+    author = {Deryle Lonsdale and Jeremiah McGhee and Nathan Glenn and Tory Anderson},
+    title = {Resolving a syntactic ambiguity type with semantic memory},
+    booktitle = {Proceedings of the 20th Conference on Behavior Representation in Modeling and Simulation (BRIMS)},
+    year = {2011},
+    month = {mar},
+    address = {Sundance, {UT}},
+    pages = {288--289},
+    tags = {peer reviewed, presentation, national},
+    docURL = {http://cc.ist.psu.edu/BRIMS/archives/2011/Brims%20Proceedings%20Compiled%20V2.pdf#page=295}
+}
+
+@MISC{Lonsdale_Glenn_McGhee_Millard_Allongo_LeGare_2011,
+    place={University of Victoria, Victoria, BC, Canada},
+    title={{NLP} and Elicited Imitation in the Assessment of Learner Oral Proficiency},
+    howpublished={{CALICO} 2011 Conference Workshop on Automatic Analysis of Learner Language {III} ({AALL} {III})},
+    author={Lonsdale, Deryle and Glenn, Nathan and McGhee, Jeremiah and Millard, Ben and Allongo, Dan and LeGare, Matthew},
+    year={2011},
+    month={may},
+    tags = {national, abstract-only review, presentation}
+}
+
+@MISC{Lonsdale11workshop31,
+    author = {Deryle Lonsdale and Jeremiah McGhee and Nathan Glenn and Tory Anderson},
+    title = {The XNL-Soar Sandbox},
+    howpublished = {Paper presented at the {S}oar Workshop 31},
+    year = {2011},
+    month = {jun},
+    address = {{U}niversity of {M}ichigan, Ann Arbor, MI},
+    tags = {national, presentation},
+    docURL = {http://ai.eecs.umich.edu/soar/sitemaker/workshop/31/files/24_lonsdale2_xnl.pptx}
+}
+
+@inproceedings{karakos2012conversation,
+    author = {Damianos Karakos and Brian Roark and Izhak Shafran and Kenji Sagae and Maider Lehr and Emily Prud'hommeaux and Puyang Xu and Nathan Glenn and Sanjeev Khudanpur and Murat Saraçlar and Daniel Bikel and Dredze, M. and Chris Callison-Burch and Yuan Cao and Keith Hall and Eva Hasler and Philipp Koehn and Adam Lopez and Matt Post and Darcey Riley},
+    booktitle = {13th Annual Conference of the International Speech Communication Association},
+    title = {Deriving conversation-based features from unlabeled speech for discriminative language modeling},
+    year = {2012},
+    month = {sep},
+    tags = {peer reviewed, international},
+    docURL = {http://www.cs.jhu.edu/~mdredze/publications/interspeech_2012_semisup.pdf}
+}
+
+@inproceedings{puyang2012continuous,
+    author = {Puyang Xu and Sanjeev Khudanpur and Maider Lehr and Emily Prud'hommeaux and Nathan Glenn and Damianos Karakos and Brian Roark and  Kenji Sagae and Murat Saraçlar and Izhak Shafran and Daniel Bikel and Chris Callison-Burch and Yuan Cao and Keith Hall and Eva Hasler and Philipp Koehn and Adam Lopez and Matt Post and Darcey Riley},
+    booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2012)},
+    title = {Continuous Space Discriminative Language Modeling},
+    year = {2012},
+    month = {mar},
+    tags = {international, peer reviewed},
+    docURL = {http://www.cslu.ogi.edu/~zak/px-icassp12.pdf}
+}
+
+@inproceedings{sagae2012hallucinated,
+    author = {Kenji Sagae and Maider Lehr and Emily Prud'hommeaux and Puyang Xu and Nathan Glenn and Damianos Karakos and Sanjeev Khudanpur and Brian Roark and Murat Saraçlar and Izhak Shafran and Daniel Bikel and Chris Callison-Burch and Yuan Cao and Keith Hall and Eva Hasler and Philipp Koehn and Adam Lopez and Matt Post and Darcey Riley},
+    booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2012)},
+    title = {Hallucinated N-Best Lists for Discriminative Language Modeling},
+    year = {2012},
+    month = {mar},
+    tags = {international, peer reviewed},
+    docURL = {http://www.cslu.ogi.edu/~zak/ks-icassp12.pdf}
+}
+
+@inproceedings{celebi2012turkish,
+    author = {Çelebi, A. and Sak, H. and Dikici, E. and Saraçlar, M. and Maider Lehr and Kenji Sagae and Emily Prud'hommeaux and Puyang Xu and Nathan Glenn and Damianos Karakos and Sanjeev Khudanpur and Brian Roark and Izhak Shafran and Daniel Bikel and Chris Callison-Burch and Yuan Cao and Keith Hall and Eva Hasler and Philipp Koehn and Adam Lopez and Matt Post and Darcey Riley},
+    booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2012)},
+    title = {Semi-supervised Discriminative Language Modeling for Turkish ASR},
+    year = {2012},
+    month = {mar},
+    tags = {peer reviewed, international},
+    docURL = {http://www.cslu.ogi.edu/~zak/ms-icassp12.pdf}
+}
+
+@MISC{Lonsdale12workshop32,
+    author = {Deryle Lonsdale and Jeremiah McGhee and Nathan Glenn and Tory Anderson},
+    title = {XNL-Soar: where we are and where we're headed},
+    howpublished = {Paper presented at the {S}oar Workshop 32},
+    year = {2012},
+    month = {jun},
+    address = {{U}niversity of {M}ichigan, Ann Arbor, MI},
+}
+
+@MISC{glenn12workshop32,
+    author = {Nathan Glenn},
+    title = {OT and JXNL-Soar},
+    howpublished = {Paper presented at the {S}oar Workshop 32},
+    year = {2012},
+    month = {jun},
+    address = {{U}niversity of {M}ichigan, Ann Arbor, MI},
+    docURL = {http://ai.eecs.umich.edu/soar/sitemaker/workshop/32/files/25_glenn_JapaneseAndOptimalityTheory.pptx},
+    tags = {presentation, national}
+}
+
+@MISC{cox2012taskDifficulty,
+    author = {Troy Cox and Trevor Burbidge and Nathan Glenn and Matt LeGare and Carl Christensen and Deryle Lonsdale},
+    title = {The Effect of Task Difficulty on Automatically Scored Speech Features},
+    howpublished = {CALICO Pre-Conference Workshop on Automatic Analysis of Learner Language (AALL '12)},
+    year = {2012},
+    month = {jun},
+    address = {{U}niversity of {N}otre {Dame}, {N}otre {D}ame, IN},
+    docURL = {https://www.calico.org/p-596-Program%202012.html#troy},
+    tags = {abstract-only review, presentation, international}
+}
+
+@inproceedings{lonsdale2013semantic,
+  title={Semantic memory for syntactic disambiguation},
+  author={Lonsdale, Deryle and McGhee, Jeremiah and Glenn, Nathan and Wood, Seth and Anderson, Tory},
+  booktitle={Proceedings of the 12th International Conference on Cognitive Modeling (ICCM 2013), Cognitive Science Society},
+  year={2013},
+  pages={378--383},
+  tags={peer reviewed, abstract-only review, international},
+  docURL = {http://iccm-conference.org/2013-proceedings/papers/0069/paper0069.pdf}
+}
+
+ @MISC{glenn12workshop32,
+    author = {Deryle Lonsdale and Jeremiah McGhee and Nathan Glenn and Peter Lindes},
+    title = {Syntactic complexity and sentence repetition test responses},
+    howpublished = {Second Language Research Forum},
+    year = {2013},
+    month = {oct},
+    address = {Provo, {UT}},
+    docURL = {}
+}
+
+@MISC{lonsdale13workshop33,
+    author = {Deryle Lonsdale and Nathan Glenn},
+    title = {Installing and running XNL-Soar},
+    howpublished = {Paper presented at the {S}oar Workshop 33},
+    year = {2013},
+    month = {jun},
+    address = {{U}niversity of {M}ichigan, Ann Arbor, MI},
+    tags = {national, presentation},
+    docURL = {http://ai.eecs.umich.edu/soar/sitemaker/workshop/33/files/lonsdale.pdf}
+}
+
+@article {bikmatov2013ITS,
+    title={Visualization of ITS 2.0 Metadata for Localization Process},
+    author={Renat Bikmatov, Nathan Glenn, Serge Gladkoff, Alan Melby},
+    journal={Localisation Focus},
+    volume={12},
+    number={1},
+    pages={74--77},
+    tags = {international, peer reviewed},
+    docURL = {http://www.localisation.ie/sites/default/files/publications/Vol12_1_BikmatovEtAl.pdf},
+}
+
+@inproceedings{lommel2014tbx,
+  title={TBX-Min: A Simplified TBX-Based Approach to Representing Bilingual Glossaries},
+  author={Lommel, Arle and Melby, Alan and Glenn, Nathan and Hayes, James and Snow, Tyler},
+  booktitle={Terminology and Knowledge Engineering 2014},
+  pages={147--156},
+  year={2014},
+  tags = {international, peer reviewed},
+  presURL = {https://tke2014.coreon.com/slides/2014_06_19_909_1400_Lommel_et_al.pdf},
+  docURL = {http://tke2014.sciencesconf.org/conference/tke2014/eda_en.pdf#page=149}
+}
