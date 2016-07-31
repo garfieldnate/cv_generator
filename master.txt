@@ -83,6 +83,7 @@ tags for international, national, peer reviewed and abstract-only review
     year = {2012},
     month = {jun},
     address = {{U}niversity of {M}ichigan, Ann Arbor, MI},
+    tags = {presentation}
 }
 
 @MISC{glenn12workshop32,
@@ -124,7 +125,8 @@ tags for international, national, peer reviewed and abstract-only review
     year = {2013},
     month = {oct},
     address = {Provo, {UT}},
-    docURL = {}
+    docURL = {},
+    tags = {national, presentation}
 }
 
 @MISC{lonsdale13workshop33,

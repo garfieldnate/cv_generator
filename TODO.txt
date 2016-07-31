@@ -1,3 +1,7 @@
-Think about other csl styles. Stored on GitHub:
+#TODO
+
+* Think about other csl styles. Stored on GitHub:
  https://github.com/citation-style-language/styles
-Need multiple bibs: refereed articles and non-refereed presentations.
+* Need multiple bibs: refereed articles and non-refereed presentations.
+* Add filtering functionality to get_bibtex.pl
+* put gen_bibtext and gen_markdown in one file so that filtering, etc. can all be done in one action

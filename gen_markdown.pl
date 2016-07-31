@@ -1,46 +1,32 @@
 use strict;
 use warnings;
-use Text::BibTeX;
-use Path::Tiny;
-use autodie;
-use Capture::Tiny qw(capture);
-my $bibfile = Text::BibTeX::File->new("pubs.bib");
+use IPC::Run3;
 
-my $bib_template = <<'END';
-\documentclass{article}
-\usepackage{biblatex}
-\bibliography{mybib}
-\begin{document}
-CITATIONS
-\printbibliography
-\end{document}
+@ARGV == 2 or die "Usage: perl gen_markdown.pl bibtex_file output_file";
+my ($bibtex_file, $output_file) = @ARGV;
+
+my $stdin = <<"END";
+---
+bibliography: $bibtex_file
+nocite: '\@*'
+...
+
+# Bibliography
 END
+my ( $stdout, $stderr ) = ( '', '' );
 
-my @keys;
-while (my $entry = Text::BibTeX::Entry->new($bibfile))
-{
-    die 'error in input' unless $entry->parse_ok;
-    push @keys, $entry->key;
-}
+my @command = ('C:\Users\Nate\AppData\Local\Pandoc\pandoc',
+  '--filter=pandoc-citeproc',
+  '--standalone',
+  '-t', 'markdown_strict', # don't just print out @* again
+  '--columns=1000', # don't split lines
+  # '--csl=apa-5th-edition.csl', # use a style from https://github.com/citation-style-language/styles
+ '-o', $output_file
+);
 
-my $cite_string = join "\n", map {"\t\\nocite{$_}"} @keys;
-$bib_template =~ s/CITATIONS/$cite_string/;
-my $temp = path('bibtemp.tex');
-my $fh = $temp->openw_utf8;
-print $fh $bib_template;
-close $fh;
-my ($stdout, $stderr) =
-    capture {
-      system('C:\Users\Nate\AppData\Local\Pandoc\pandoc',
-          '--bibliography', 'pubs.bib',
-          '-t', 'markdown_strict', # don't just print pandoc citations like [@my_citation]
-          '--columns=1000', # don't split lines
-          # '--csl=apa-5th-edition.csl', # use a style from https://github.com/citation-style-language/styles
-          "$temp")
-    };
+run3 \@command, \$stdin, \$stdout, \$stderr;
 
-$temp->remove;
+die "something went horribly wrong: $?" if $?;
 
-
-
-print $stdout;
+print "STDOUT\n$stdout\n" if($stdout);
+print "STDERR\n$stderr\n" if($stderr);
